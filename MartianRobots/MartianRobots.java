@@ -34,6 +34,7 @@ public class MartianRobots {
                     position = newPosition;
 
                     // out of bounds ?
+					if(!lost)
                     if ((position.x > bounds.x) || (position.x < 0) ||
                             (position.y > bounds.y) || (position.y < 0)) {
                         lost = true;
